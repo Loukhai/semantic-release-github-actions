@@ -1,4 +1,5 @@
 {
+  "repositoryUrl": "https://github.com/Loukhai/semantic-release-github-actions.git",
   "branches": [
     "main"
   ],

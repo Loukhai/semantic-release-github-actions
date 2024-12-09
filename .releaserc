@@ -1,13 +1,12 @@
 {
-  "repositoryUrl": "https://github.com/Loukhai/semantic-release-github-actions.git",
   "branches": [
     "main"
   ],
   "plugins": [
+    "@semantic-release/git",
+    "@semantic-release/github",
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/git"
+    "@semantic-release/changelog"
   ]
 }

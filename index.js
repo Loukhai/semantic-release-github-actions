@@ -1,3 +1,4 @@
 console.log("hello semantic release and github actions");
 
-console.log('update chore 1')
+const branch = "develop";
+console.log(`you are in ${branch} branch`);

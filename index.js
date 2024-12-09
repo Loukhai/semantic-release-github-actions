@@ -1,6 +1,6 @@
 console.log("hello semantic release and github actions");
 
-const branch = "develop";
+const branch = "pnpm";
 const wow = true;
 
 if (wow) {

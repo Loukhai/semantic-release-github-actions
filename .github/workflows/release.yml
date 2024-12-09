@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
-          cache: "pnpm" # Use pnpm caching for better performance
+          cache: "pnpm" # Enable pnpm caching
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -30,7 +30,7 @@ jobs:
       - name: Verify pnpm installation
         run: pnpm --version
 
-      - name: Install dependencies
+      - name: Install dependencies with pnpm
         run: pnpm install
 
       - name: Run Semantic Release

@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Loukhai/semantic-release-github-actions/compare/v1.2.0...v1.3.0) (2024-12-09)
+
+
+### Features
+
+* test ([5328042](https://github.com/Loukhai/semantic-release-github-actions/commit/532804275d6410f59a1dcb2a01f8625b29394572))
+
 # [1.2.0](https://github.com/Loukhai/semantic-release-github-actions/compare/v1.1.3...v1.2.0) (2024-12-09)
 
 

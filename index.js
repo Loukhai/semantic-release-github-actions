@@ -1,1 +1,1 @@
-console.log("hello semantic release");
+console.log("hello semantic release and github actions");

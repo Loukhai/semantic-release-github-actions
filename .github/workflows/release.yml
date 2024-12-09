@@ -20,8 +20,8 @@ jobs:
 
       - name: pnpm actions setup
         uses: pnpm/action-setup@v2
-        # with:
-        # version: 6.32.9
+        with:
+          version: "lts/*"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

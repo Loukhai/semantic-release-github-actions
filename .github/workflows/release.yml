@@ -21,16 +21,13 @@ jobs:
       - name: pnpm actions setup
         uses: pnpm/action-setup@v2
         with:
-          version: 9.15.0
+          version: 9.15.0 # you can also specify pnpm version in package.json
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           cache: "pnpm" # Enable pnpm caching
-
-      # - name: Install pnpm
-      # run: npm install -g pnpm
 
       - name: Verify pnpm installation
         run: pnpm --version

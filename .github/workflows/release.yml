@@ -18,14 +18,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: pnpm actions setup
+        uses: pnpm/action-setup@v2
+        # with:
+        # version: 6.32.9
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
           cache: "pnpm" # Enable pnpm caching
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      # - name: Install pnpm
+      # run: npm install -g pnpm
 
       - name: Verify pnpm installation
         run: pnpm --version

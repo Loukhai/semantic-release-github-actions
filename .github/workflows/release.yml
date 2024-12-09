@@ -18,10 +18,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Read pnpm version from package.json
+        id: pnpm_version
+        run: echo "pnpm=$(jq -r '.engines.pnpm' package.json)" >> $GITHUB_ENV
+
       - name: pnpm actions setup
         uses: pnpm/action-setup@v2
         with:
-          version: 9.15.0 # you can also specify pnpm version in package.json
+          version: ${{ env.pnpm }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

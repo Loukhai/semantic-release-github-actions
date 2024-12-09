@@ -3,16 +3,6 @@
     "main"
   ],
   "plugins": [
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version}  [skip ci]\n\n${nextRelease.notes"
-      }
-    ],
-    "@semantic-release/github",
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
@@ -20,6 +10,17 @@
       {
         "changelogFile": "CHANGELOG.md"
       }
-    ]
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ],
+        "message": "🚀 Release: ${nextRelease.version} [skip ci]\n\n📋 **Changelog:**\n${nextRelease.notes}\n\n🔖 **Tag:** ${nextRelease.gitTag}\n🕒 **Date:** ${new Date().toISOString()}\n\n💡 View details: https://github.com/${process.env.GITHUB_REPOSITORY}/releases/tag/${nextRelease.gitTag}"
+      }
+    ],
+    "@semantic-release/github"
   ]
 }

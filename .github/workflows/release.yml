@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
+      contents: write # to publish a GitHub release
+      issues: write # to comment on released issues
+      pull-requests: write # to comment on released pull requests
 
     steps:
       - name: Checkout code
@@ -22,13 +22,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
-          cache: "pnpm"
+          cache: "pnpm" # Use pnpm caching for better performance
 
       - name: Install pnpm
-        run: |
-          npm install -g pnpm
+        run: npm install -g pnpm
 
-      - name: Debug pnpm version
+      - name: Verify pnpm installation
         run: pnpm --version
 
       - name: Install dependencies

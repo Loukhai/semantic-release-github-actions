@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/Loukhai/semantic-release-github-actions/compare/v1.3.0...v1.3.1) (2024-12-09)
+
+
+### Bug Fixes
+
+* move const to pnpm ([28bc80b](https://github.com/Loukhai/semantic-release-github-actions/commit/28bc80b8ecb724a7b15a8c4cca43d995c573d082))
+* remove wow ([62390d0](https://github.com/Loukhai/semantic-release-github-actions/commit/62390d0eceaa27ae770d321c59efb05d19567ca9))
+
 # [1.3.0](https://github.com/Loukhai/semantic-release-github-actions/compare/v1.2.0...v1.3.0) (2024-12-09)
 
 

@@ -26,10 +26,13 @@ jobs:
 
       - name: Install pnpm
         run: |
-          npm i -g pnpm
+          npm install -g pnpm
+
+      - name: Debug pnpm version
+        run: pnpm --version
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm install
 
       - name: Run Semantic Release
         env:
